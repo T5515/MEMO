@@ -39,6 +39,13 @@ public class MEMOservlet extends HttpServlet {
 			MEMObean get = new MEMObean();
 			
 			ArrayList<MEMObean> GET = MEMOdao.getInstance().MEMOGET(get);
+			
+			MEMObean set = new MEMObean();
+			StringBuilder sb = new StringBuilder();
+			sb.append(GET.get(0).getpop());
+			
+			request.setAttribute("pop", sb);
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

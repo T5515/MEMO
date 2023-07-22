@@ -7,6 +7,6 @@
 		<title>メモ帳アプリ</title>
 	</head>
 	<body>
-		
+		<p><%= request.getAttribute("pop") %>
 	</body>
 </html>

@@ -8,6 +8,7 @@ public class MEMObean implements Serializable{
 	private String id;
 	private String title;
 	private String content;
+	private StringBuilder pop;
 	
 	public String getid() {
 		return id;
@@ -31,5 +32,13 @@ public class MEMObean implements Serializable{
 	
 	public void setcontent(String Content) {
 		this.content = Content;
+	}
+	
+	public StringBuilder getpop() {
+		return pop;
+	}
+	
+	public void setpop(StringBuilder Pop) {
+		this.pop = Pop;
 	}
 }
